@@ -1,4 +1,4 @@
-# ShiftGrid-Trading-Robot
+# ShiftGrid Trading Robot
 
 The most common mistake many traders and analysts make is that they think they can determine whether the price is high or low at any given moment. The fact is that the financial market has long been a collection of random processes, reliable forecasting of which is even theoretically impossible. All the techniques of so-called technical analysis based on indicators, that is, formulas designed to calculate the future state of the market based on known data from its past conditions, no longer work. Such basic concepts as "overbought" and "oversold" have lost their economic meaning, as the market has become global, and the volume of its liquidity can be considered almost infinite.
 

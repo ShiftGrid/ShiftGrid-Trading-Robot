@@ -34,6 +34,6 @@ def prt_scr():
     os.system("cls")
     print("")
     print(M + " ShiftGrid trading robot (ver.2.6.1) launched")
-t = Thread(target = prt_scr)
+tr = Thread(target = prt_scr)
 if __name__ == "__main__":
     tr.start()

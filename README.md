@@ -1,1 +1,1 @@
-###### ShiftGrid Trading Robot
+# ShiftGrid Trading Robot

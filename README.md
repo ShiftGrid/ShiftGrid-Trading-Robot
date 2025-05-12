@@ -1,1 +1,1 @@
-#ShiftGrid - fully autonomous trading robot for crypto market
+## ShiftGrid - fully autonomous trading robot for crypto market

@@ -152,7 +152,6 @@ try:
     f.close()
 except Exception:
     pass
-
 def disable_quick_edit_mode():
     kernel32 = ctypes.WinDLL('kernel32')
     dword_for_std_input_handle = ctypes.wintypes.DWORD(-10)
@@ -162,13 +161,12 @@ def disable_quick_edit_mode():
     last_error = kernel32.GetLastError()
     return last_error
 disable_quick_edit_mode()
-
 def prt_scr():
     try:
         print('\033[?25l', end="")
         os.system("cls")
         print("")
-        print(M + " ShiftGrid ver.2.6.3 trading robot is working")
+        print(M + " *** ShiftGrid v2.6.3 trading robot works ***")
         print(" Exchange: ", C + exchange)
         print(strftime(G + " %Y-%m-%d %H:%M UTC" + Style.RESET_ALL, gmtime()), Y + f_mess)
         print(B + " Asset:          ", W + symbol)
@@ -199,7 +197,6 @@ def prt_scr():
     except Exception:
         os.system("cls")
         print(B + " Waiting...")
-
 def init_sell():
     global ass_quant
     global base_quant
@@ -283,12 +280,11 @@ def init_sell():
              
     except Exception:
         time.sleep(10)
-        print(R + " Error")
+        print(R + "  Recall...")
         err_counter += 1
         if err_counter > 10:
             os.system("shutdown /r /t 10 /f")
-            sys.exit()
-         
+            sys.exit()         
 def init_buy():
     global ass_quant
     global base_quant
@@ -395,12 +391,11 @@ def init_buy():
                  
     except Exception:
         time.sleep(10)
-        print(R + " Error")
+        print(R + "  Recall...")
         err_counter += 1
         if err_counter > 10:
             os.system("shutdown /r /t 10 /f")
-            sys.exit()
-         
+            sys.exit()         
 def init_trade():
     global buy_id
     global sell_id
@@ -535,7 +530,7 @@ def init_trade():
                  
     except Exception:
         time.sleep(10)
-        print(R + " Error")
+        print(R + "  Recall...")
         err_counter += 1
         if err_counter > 10:
             os.system("shutdown /r /t 10 /f")
@@ -795,7 +790,7 @@ def trade():
             init_trade()
     except Exception:
         time.sleep(10)
-        print(R + " Error")
+        print(R + "  Recall...")
         err_counter += 1
         if err_counter > 10:
             os.system("shutdown /r /t 10 /f")

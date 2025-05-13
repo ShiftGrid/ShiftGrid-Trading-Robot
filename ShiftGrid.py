@@ -38,7 +38,7 @@ import urlconn
 time.sleep(2)
 warnings.filterwarnings("ignore")
 init()
-ctypes.windll.kernel32.SetConsoleTitleA(b"ShiftGrid v.2.6.3")
+ctypes.windll.kernel32.SetConsoleTitleA(b"ShiftGrid v2.6.3")
 class CONSOLE_CURSOR_INFO(Structure):
     _fields_ = [('dwSize', c_int),
                 ('bVisible', c_int)]
@@ -81,7 +81,7 @@ def prt_scr():
     print('\033[?25l', end="")
     os.system("cls")
     print("")
-    print(M + " *ShiftGrid v.2.6.3 trading robot is working*")
+    print(M + " *** ShiftGrid v2.6.3 trading robot works ***")
 tr = Thread(target = prt_scr)
 if __name__ == "__main__":
     tr.start()

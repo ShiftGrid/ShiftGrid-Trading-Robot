@@ -1,5 +1,5 @@
 Python https://www.python.org/downloads/
-python-3.13.3
+python-3.10.11
 Install Now
 Use Admin privilegies
 Add python.exe to PATH
@@ -10,4 +10,5 @@ pip install colorama
 pip install cython
 pip install cryptography
 pip install psutil
+
 
